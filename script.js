@@ -13,5 +13,4 @@ function copyCode() {
     code.select();
     code.setSelectionRange(0, 99999); // For mobile devices
     document.execCommand('copy');
-    alert('Code copied to clipboard: ' + code.value);
 }

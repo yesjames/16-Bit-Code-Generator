@@ -1,37 +1,140 @@
 body {
     font-family:'Segoe UI';
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #031423;
 }
 
 .container {
     width :60vw;
     display: flex;
-    
+    flex-direction: column;
     text-align: center;
-    background-color: #fff;
+    background-color: #081b2b;
+    color:aliceblue;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .code-container {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 input {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
+    height: 60px;
+    width: 80%;
+    background-color: #0a1620;
+    padding: 0.2vw;
+    border: solid 1px #031423;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+    color:#0BA34E ;
+    margin-bottom: 2vw;
+}
+
+.button{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 button {
+    height: 60px;
+    width: 180px;
+    background-color: #0a1620;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
     padding: 10px 20px;
     font-size: 16px;
     margin: 5px;
     cursor: pointer;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.button :hover{
+    color: #ffffff;
+    background: #0BA34E;
+    border: 1px solid #0BA34E;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff, 0 0 10px #ffffff;
+    box-shadow: 0 0 2px #0BA34E, 0 0 5px #0BA34E, 0 0 10px #0BA34E,0 0 20px #0BA34E;
+}
+
+h4{
+    position: relative;
+    color:aliceblue;
+}
+
+h2{
+    color:aliceblue;
+    line-height: 2;
+    font-size: 3.5vw;
+    text-align: center;
+    font-weight: 700;
+    display: none;
+
+}
+
+h5{
+
+    color:#0BA34E;
+    line-height: 2;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+}
+
+h6{
+    color:aliceblue;
+    font-size: 3vw;
+    font-weight: 300;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+      display: none;
+    }
+
+    input {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+    
+    h4{
+        display: none;
+    }
+
+    h2{
+        display:block;
+    }
+
+    h5{
+        display: block;
+    }
+
+    h6{
+        display: block;
+    }
+
 }
